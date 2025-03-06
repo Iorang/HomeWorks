@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             int fullNumber;
-            string fullTextNumber;
 
             Console.WriteLine("Введите 3-х значное целое число:");
             fullNumber = Convert.ToInt32(Console.ReadLine());
@@ -17,7 +16,7 @@
                 int thirdNumber = fullNumber % 10;
 
                 string firstTextNumber = "";
-                string secondTextNumber= "";
+                string secondTextNumber = "";
                 string thirdTextNumber = "";
 
                 switch (firstNumber)
@@ -153,7 +152,7 @@
                 }
 
                 Console.WriteLine("Число в текстовом представлении:");
-                Console.WriteLine("{0} {1} {2}",firstTextNumber, secondTextNumber, thirdTextNumber);
+                Console.WriteLine("{0} {1} {2}", firstTextNumber, secondTextNumber, thirdTextNumber);
                 Console.ReadLine();
             }
             else

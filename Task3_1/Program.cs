@@ -16,21 +16,10 @@ namespace Task3_1
             Console.WriteLine("Введите число 2:");
             b = Convert.ToDouble(Console.ReadLine());
 
+
             Console.WriteLine("Результат сравнения:");
-            if (a == b)
-            {
-                Console.WriteLine(a + " = " + b);
-            }
 
-            if (a > b)
-            {
-                Console.WriteLine(a + " > " + b);
-            }
-
-            if (a < b)
-            {
-                Console.WriteLine(a + " < " + b);
-            }
+            Console.WriteLine((a == b) ? (a + " = " + b) : (a > b) ? (a + " > " + b) : (a + " < " + b));
 
             Console.ReadLine();
 

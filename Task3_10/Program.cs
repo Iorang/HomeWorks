@@ -14,36 +14,20 @@
             {
                 switch (number % 10)
                 {
-                    case 0:
-                        wordEnding = "ов";
-                        break;
 
                     case 1:
                         wordEnding = "";
                         break;
-
                     case 2:
-                        wordEnding = "а";
-                        break;
-
                     case 3:
-                        wordEnding = "а";
-                        break;
                     case 4:
                         wordEnding = "а";
                         break;
+                    case 0:
                     case 5:
-                        wordEnding = "ов";
-                        break;
                     case 6:
-                        wordEnding = "ов";
-                        break;
                     case 7:
-                        wordEnding = "ов";
-                        break;
                     case 8:
-                        wordEnding = "ов";
-                        break;
                     case 9:
                         wordEnding = "ов";
                         break;

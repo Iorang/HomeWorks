@@ -8,45 +8,40 @@
             double b;
             double c;
             double d;
+            double maxNumber;
 
 
             Console.WriteLine("Введите 4 разных числа:");
 
-            Console.WriteLine("a = ");
+            Console.Write("a = ");
             a = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("b = ");
+            Console.Write("b = ");
             b = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("c = ");
+            Console.Write("c = ");
             c = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("d = ");
+            Console.Write("d = ");
             d = Convert.ToDouble(Console.ReadLine());
 
+            maxNumber = a;
+            if (b > maxNumber)
+            {
+                maxNumber = b;
+            }
+            if (c > maxNumber)
+            {
+                maxNumber = c;
+            }
+            if (d > maxNumber)
+            {
+                maxNumber = d;
+            }
 
-            if (d > a && d > b && d > c)
-            {
-                Console.WriteLine("Наибольшее из чисел число: d = " + d);
-            }
-            else
-            {
-                if (c > b && c > a)
-                {
-                    Console.WriteLine("Наибольшее из чисел число: c = " + c);
-                }
-                else 
-                {
-                    if (b > a)
-                    {
-                        Console.WriteLine("Наибольшее из чисел число: b = " + b);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Наибольшее из чисел число: a = " + a);
-                    }
-                }
-            }
+
+            Console.WriteLine("Наибольшее из чисел число: " + maxNumber);
+
             Console.ReadLine();
         }
     }

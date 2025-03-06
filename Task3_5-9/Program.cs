@@ -35,7 +35,7 @@ namespace Task3_5_9
 
             //Task3_7
             Console.Write("Число является двухзначным?: ");
-            if ((number / 100) > 0)
+            if ((number / 100) > 0 && (number / 100) < 1)
             {
                 Console.WriteLine("Да");
             }
