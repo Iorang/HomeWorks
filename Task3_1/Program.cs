@@ -20,7 +20,7 @@ namespace Task3_1
             Console.WriteLine("Результат сравнения:");
 
             Console.WriteLine((a == b) ? (a + " = " + b) : (a > b) ? (a + " > " + b) : (a + " < " + b));
-
+            //comment
             Console.ReadLine();
 
         }
