@@ -1,4 +1,4 @@
-﻿namespace Task1_1
+﻿namespace HW_1.Task1_1
 {
     internal class Program
     {
