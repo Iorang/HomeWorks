@@ -1,0 +1,99 @@
+﻿<Window
+    x:Class="Task3._9._1.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Task3._9._1.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  Имя разреза  -->
+        <TextBlock
+            Grid.Row="0"
+            Margin="0,0,0,5"
+            Text="Имя разреза:" />
+        <TextBox
+            Grid.Row="1"
+            Height="25"
+            Margin="0,0,0,15"
+            Text="{Binding SectionName, UpdateSourceTrigger=PropertyChanged}" />
+
+        <!--  Отступы  -->
+        <TextBlock
+            Grid.Row="2"
+            Margin="0,0,0,10"
+            FontWeight="Bold"
+            Text="Отступы (мм):" />
+
+        <!--  Ширина  -->
+        <Grid Grid.Row="3" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="По ширине:" />
+            <TextBox
+                Grid.Column="1"
+                Height="25"
+                Text="{Binding WidthOffsetMm, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <!--  Глубина  -->
+        <Grid Grid.Row="4" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="По глубине:" />
+            <TextBox
+                Grid.Column="1"
+                Height="25"
+                Text="{Binding DepthOffsetMm, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <!--  Высота  -->
+        <Grid Grid.Row="5" Margin="0,0,0,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="По высоте:" />
+            <TextBox
+                Grid.Column="1"
+                Height="25"
+                Text="{Binding HeightOffsetMm, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <!--  Кнопка  -->
+        <Button
+            Grid.Row="7"
+            Height="35"
+            Command="{Binding CreateSectionCommand}"
+            Content="Создать разрез"
+            FontSize="14"
+            FontWeight="Bold" />
+    </Grid>
+</Window>
